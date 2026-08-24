@@ -14,15 +14,25 @@ Sistema de **detecção e reconhecimento de placas veiculares** para controle de
 
 CancelaPrefeitura/
 ├── banco/ # Camada de dados (SQLite): placas autorizadas e movimentação
+
 ├── core/ # Regras de negócio (liberar entrada/saída, negar acesso)
+
 ├── detectores/ # Detecção de placas com OpenCV (Haar Cascade)
+
 ├── ocr/ # Leitura e validação do texto da placa (EasyOCR)
+
 ├── interface/ # Menu de gerenciamento via terminal
+
 ├── main/ # API (FastAPI) e scripts de execução (câmera/imagem de teste)
+
 ├── imagens/ # Imagens de teste
+
 ├── videos/ # Vídeos de teste
+
 ├── data/ # Banco de dados SQLite (cancela.db)
+
 ├── simulate_camera.py # Simula a cancela usando vídeo/imagens de teste, sem câmera real
+
 └── requirements.txt
 
 ## Requisitos
